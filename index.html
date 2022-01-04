@@ -10,6 +10,6 @@
         const token = prompt('Please enter a valid token');
 
         const myWindow = window.open('https://vanis.io');
-        myWindow.postMessage({ vanis_token: token });
+        setTimeout(() => myWindow.postMessage({ vanis_token: token }), 5000);
     </script>
 </body></html>
